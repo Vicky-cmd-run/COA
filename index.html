@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative COA Canvas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            background: #f0f8ff;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #4b6cb7;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 2rem;
+            padding: 0 1rem;
+            font-style: italic;
+        }
+
+        footer {
+            background: #182848;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Creative COA Canvas</h1>
+        <p>Explore COA through every creative lens</p>
+    </header>
+
+    <div class="container">
+        <a href="poster.html" class="card">
+            <h3>History of Computer’s</h3>
+            <p>The history of computers is a journey of innovation, transforming from mechanical devices to digital
+                powerhouses that shape our world today.</p>
+        </a>
+        <a href="infographic.html" class="card">
+            <h3>Von Neumann Machine</h3>
+            <p>The Von Neumann machine is a fundamental computing architecture that separates memory and processing to
+                enable efficient execution of instructions.</p>
+        </a>
+        <a href="digital-drawing.html" class="card">
+            <h3>Pin and Architecture of 8086</h3>
+            <p>The 8086 is a 16-bit microprocessor that introduced the x86 architecture, forming the foundation for
+                modern Intel processors.</p>
+        </a>
+        <a href="cartoons.html" class="card">
+            <h3>Cartoon to explain pipelining</h3>
+            <p>Pipelining is a technique that allows overlapping execution of multiple instructions to improve processor
+                performance.</p>
+        </a>
+        <a href="poem.html" class="card">
+            <h3>Poem</h3>
+            <p>You guys right. This poem is not mine😅</p>
+        </a>
+        <a href="memes.html" class="card">
+            <h3>Memes</h3>
+            <p>Educational and Funny COA memes for visual learners.</p>
+        </a>
+        <a href="experience.html" class="card">
+            <h3>My COA Experience</h3>
+            <p>My first S grade started with DLD, hoping to get an S again🤞</p>
+        </a>
+    </div>
+
+    <div class="quote">
+        “A computer is a machine that follows our logic, faster than we ever could.”
+    </div>
+
+    <footer>
+        Created for COA Assignment | 2025
+    </footer>
+
+</body>
+
+</html>
